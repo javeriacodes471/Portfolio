@@ -1,0 +1,164 @@
+/* Global Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f7fc; /* Light background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-color: #3b5998; /* Unique color */
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+  
+  /* Projects Section */
+  .projects {
+    background-color: #fff;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .project {
+    background-color: #f4f7fc;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .project:hover {
+    transform: translateY(-5px); /* Subtle hover effect */
+  }
+  
+  .project a {
+    color: #3b5998;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .project a:hover {
+    color: #ff6600; /* Hover color change */
+  }
+  
+  /* Skills Section */
+  .skills {
+    background-color: #eeeeee;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .skills ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .skills li {
+    font-size: 1.25rem;
+    margin: 10px 0;
+  }
+  
+  /* Contact Section */
+  .contact {
+    background-color: #fff;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .contact p {
+    font-size: 1.25rem;
+  }
+  
+  /* Dark Mode Styles */
+  body.dark-mode {
+    background-color: #1e1e1e;
+    color: #fff;
+  }
+  
+  .hero.dark-mode {
+    background-color: #333;
+  }
+  
+  .projects.dark-mode {
+    background-color: #2e2e2e;
+  }
+  
+  .contact.dark-mode {
+    background-color: #2e2e2e;
+  }
+  
+  /* Fade-in Animation */
+  .hero, .projects, .skills, .contact {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .projects h2 {
+      font-size: 1.8rem;
+    }
+  
+    .project {
+      padding: 15px;
+    }
+  
+    .contact p {
+      font-size: 1.1rem;
+    }
+  }
+  .project.dark-mode {
+    background-color: #3a3a3a;
+    color: #f1f1f1;
+  }
+  .about {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  .dark-mode .about {
+    background-color: #2e2e2e;
+    color: #eee;
+  }
+  @media (max-width: 768px) {
+    .projects, .skills, .contact, .about {
+      padding: 1rem;
+    }
+    h1 {
+      font-size: 1.8rem;
+    }
+  }
+  
