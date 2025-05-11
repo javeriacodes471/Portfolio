@@ -40,4 +40,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       project.classList.toggle('dark-mode');
     });
   });
+  document.getElementById("downloadBtn").addEventListener("click", function () {
+    alert("Your CV download will start now!");
+  });
   
